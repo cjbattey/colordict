@@ -1,0 +1,3 @@
+This is an R script for converting the beautiful CMYK color combinations in Senzo Wada's "A Dictionary of Color Combinations" to RGB for use in plots. To use it, download the script colordict.R and then source it at the top of your file. I'll get around to making this a package at some point. 
+
+Usage notes to follow...
