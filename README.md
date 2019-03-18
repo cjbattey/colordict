@@ -1,7 +1,7 @@
 This is an R script for converting the beautiful CMYK color combinations in Senzo Wada's "A Dictionary of Color Combinations" to RGB for use in plots. You can find the book at your local art book store or on Amazon (https://www.amazon.com/s?k=a+dictionary+of+color+combinations). It's great, go buy it.
 
 To use this script download colordict.R and then source it at the top of your file.
-You can then use get RGB hex codes for any named color in the book by passing a list of color names as character strings to the function 'getcolordict()', and pass those to scale_color_manual() or plot(). All color names are lower case only,spaces have been replaced with an underscore, and apostrophes are removed. So "Vandar Poel's Blue" is now "vander_poels_blue".
+You can then use get RGB hex codes for any named color in the book by passing a list of color names as character strings to the function 'getcolordict()', which you can then pass to your favorite plotting function (*cough ggplot2 endcough*). All color names are lower case with replaced by an underscore and apostrophes removed. So "Vandar Poel's Blue" is now "vander_poels_blue".
 
 Fair warning that many of these colors are pretty different in CMYK versus RGB -- blues in particular are much more luminant in RGB. You can check how a set of colors look on the screen with the function 'plotcolordict()', which takes a list of color names. 
 
