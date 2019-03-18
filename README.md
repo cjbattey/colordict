@@ -20,9 +20,13 @@ plotcolordict(colornames)
 ggplot(data=data.frame(x=runif(100,1,10),
                        y=runif(100,1,10),
                        bin=sample(1:4,100,T)),
-       aes(x=x,y=y,col=factor(bin)))+
-       scale_color_manual(values=getcolordict(colornames))+
-         geom_point()
+       aes(x=x,y=y,fill=factor(bin)))+
+       scale_fill_manual(values=getcolordict(colornames))+
+         geom_point(shape=21,stroke=0.2,size=4)
 ```
+
+The last command should produce this: 
+![alt text](https://github.com/cjbattey/colordict/blob/master/Screen%20Shot%202019-03-18%20at%209.54.27%20AM.png "Example plot")
+
 
 I'll get around to making this a package and adding real help etc at some point. Enjoy!
